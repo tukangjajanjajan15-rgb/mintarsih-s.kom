@@ -1044,11 +1044,26 @@ footer {
   }
 
   .education-card {
-    gap: 16px;
+    gap: 18px;
+    padding: 18px 16px;
   }
 
   .education-card h3 {
     font-size: 1.16rem;
+  }
+
+  .education-meta {
+    gap: 12px;
+  }
+
+  .education-meta > div {
+    padding: 14px 12px;
+    display: grid;
+    gap: 6px;
+  }
+
+  .education-meta span {
+    margin-bottom: 0;
   }
 
   .contact-section {

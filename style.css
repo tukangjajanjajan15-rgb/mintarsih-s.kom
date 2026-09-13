@@ -827,6 +827,12 @@ footer {
     width: calc(100% - 14px);
     top: 8px;
     padding: 12px 12px 12px 14px;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(14, 82, 152, 0.08);
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
   }
 
   .brand {
@@ -860,15 +866,15 @@ footer {
     top: calc(100% + 8px);
     left: 0;
     right: 0;
-    background: rgba(255,255,255,.96);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 14px;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
     display: none;
     flex-direction: column;
     align-items: stretch;
     gap: 4px;
-    box-shadow: 0 16px 36px rgba(31, 83, 122, .08);
+    box-shadow: none !important;
   }
 
   .nav.open {
@@ -876,48 +882,50 @@ footer {
   }
 
   .nav a {
-    padding: 11px;
-    border-radius: 10px;
+    padding: 11px 0;
+    border-radius: 0;
     font-size: .88rem;
   }
 
   .nav a:hover {
-    background: #f0f7ff;
+    background: transparent;
   }
 
   .section {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 80px 12px 24px;
+    padding: 86px 14px 26px;
   }
 
   .hero {
     min-height: auto;
-    gap: 30px;
-    padding-top: 42px;
+    gap: 28px;
+    padding-top: 34px;
   }
 
   .eyebrow,
   .section-kicker {
-    letter-spacing: .1em;
-    font-size: .68rem;
+    letter-spacing: .12em;
+    font-size: .64rem;
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 11vw, 3.1rem);
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
     line-height: 1.02;
-    margin-top: 12px;
+    margin-top: 10px;
+    letter-spacing: -.06em;
   }
 
   .hero h2 {
     font-size: 1rem;
     margin-top: 14px;
+    line-height: 1.5;
   }
 
   .hero-content > p {
     font-size: .93rem;
-    line-height: 1.72;
+    line-height: 1.75;
     margin-top: 16px;
   }
 
@@ -927,6 +935,7 @@ footer {
     width: 100%;
     align-items: stretch;
     margin-top: 22px;
+    gap: 10px;
   }
 
   .btn {
@@ -934,11 +943,12 @@ footer {
     min-height: 46px;
     padding: 0 18px;
     font-size: .9rem;
+    border-radius: 12px;
   }
 
   .phone-link {
     width: 100%;
-    margin-top: 6px;
+    margin-top: 2px;
   }
 
   .phone-link strong {
@@ -948,8 +958,8 @@ footer {
 
   .quick-info {
     grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 22px;
+    gap: 12px;
+    margin-top: 24px;
   }
 
   .quick-info > div {
@@ -958,15 +968,17 @@ footer {
     border-bottom: 1px solid rgba(14, 82, 152, 0.08);
     padding: 0 0 12px;
     box-shadow: none !important;
+    border-radius: 0 !important;
   }
 
   .quick-info span {
-    font-size: .76rem;
+    font-size: .74rem;
     margin-bottom: 8px;
   }
 
   .quick-info strong {
-    font-size: .78rem;
+    font-size: .8rem;
+    font-weight: 700;
   }
 
   .about-grid,
@@ -1004,7 +1016,11 @@ footer {
   .cert-card,
   .education-card,
   .timeline-card,
-  .contact-section {
+  .contact-section,
+  .photo-card,
+  .photo-badge,
+  .section-heading > span,
+  .education-meta > div {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -1013,42 +1029,55 @@ footer {
     padding: 0 !important;
   }
 
-  .contact-section {
-    border-radius: 0;
+  .photo-card {
+    width: min(100%, 260px);
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .photo-card::before {
+    display: none;
+  }
+
+  .photo-badge {
+    display: none;
   }
 
   .section-heading {
-    grid-template-columns: 42px 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
+    grid-template-columns: 38px 1fr;
+    gap: 12px;
+    margin-bottom: 22px;
+    align-items: center;
   }
 
   .section-heading > span {
-    width: 42px;
-    height: 42px;
-    font-size: .88rem;
+    width: 38px;
+    height: 38px;
+    font-size: .8rem;
     background: transparent !important;
-    border: 1px solid rgba(14, 82, 152, 0.12);
+    border: 1px solid rgba(14, 82, 152, 0.12) !important;
     color: var(--primary);
+    border-radius: 10px;
   }
 
   .section-heading h2 {
-    font-size: clamp(1.7rem, 7vw, 2.4rem);
-    line-height: 1.12;
-  }
-
-  .glass-card,
-  .timeline-card,
-  .education-card,
-  .skill-card,
-  .cert-card {
-    padding: 0;
-    border-radius: 0;
+    font-size: clamp(1.8rem, 7vw, 2.45rem);
+    line-height: 1.08;
+    letter-spacing: -.05em;
+    margin: 0;
+    font-weight: 800;
+    color: var(--text);
   }
 
   .timeline {
     margin-left: 0;
-    padding-left: 24px;
+    padding-left: 22px;
+  }
+
+  .timeline::before {
+    left: 6px;
+    background: rgba(14, 82, 152, 0.18);
   }
 
   .timeline-card,
@@ -1061,8 +1090,12 @@ footer {
   }
 
   .timeline-dot {
-    left: -24px;
-    top: 22px;
+    left: -22px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    border-width: 3px;
+    box-shadow: 0 0 0 5px rgba(14, 165, 233, 0.08);
   }
 
   .timeline-top {
@@ -1072,21 +1105,24 @@ footer {
 
   .timeline-top h3 {
     font-size: 1.06rem;
+    line-height: 1.35;
   }
 
   .timeline-card ul {
     margin-top: 12px;
-    line-height: 1.68;
+    line-height: 1.7;
     font-size: .92rem;
   }
 
   .education-card {
     gap: 18px;
-    padding: 18px 16px;
+    padding: 0 0 18px;
   }
 
   .education-card h3 {
-    font-size: 1.16rem;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-top: 8px;
   }
 
   .education-meta {
@@ -1106,7 +1142,7 @@ footer {
 
   .education-meta span {
     margin-bottom: 0;
-    font-size: .76rem;
+    font-size: .74rem;
   }
 
   .education-meta strong {
@@ -1115,12 +1151,15 @@ footer {
   }
 
   .contact-section {
-    padding: 24px 18px;
-    margin-top: 64px;
+    padding: 18px 0 0;
+    margin-top: 56px;
+    border-top: 1px solid rgba(14, 82, 152, 0.08);
+    border-radius: 0;
   }
 
   .contact-section h2 {
     font-size: clamp(1.5rem, 7vw, 2.2rem);
+    line-height: 1.12;
   }
 
   footer {
@@ -1128,47 +1167,5 @@ footer {
     gap: 12px;
     text-align: center;
     padding: 20px 0 32px;
-  }
-
-  .photo-card {
-    width: min(100%, 260px);
-  }
-
-  .photo-badge {
-    bottom: -14px;
-    padding: 8px 12px;
-    font-size: .7rem;
-  }
-
-  .quick-info > div,
-  .glass-card,
-  .stat-card,
-  .skill-card,
-  .cert-card,
-  .education-card,
-  .timeline-card,
-  .section-heading > span,
-  .education-meta > div,
-  .contact-section {
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    padding: 0 !important;
-  }
-
-  .quick-info > div,
-  .education-meta > div,
-  .timeline-card,
-  .skill-card,
-  .cert-card {
-    border-bottom: 1px solid rgba(14, 82, 152, 0.08) !important;
-    padding-bottom: 18px !important;
-  }
-
-  .education-meta > div {
-    display: grid;
-    gap: 6px;
   }
 }

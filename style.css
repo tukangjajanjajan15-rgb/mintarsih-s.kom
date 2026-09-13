@@ -889,13 +889,13 @@ footer {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 72px 12px 20px;
+    padding: 80px 12px 24px;
   }
 
   .hero {
     min-height: auto;
-    gap: 28px;
-    padding-top: 38px;
+    gap: 30px;
+    padding-top: 42px;
   }
 
   .eyebrow,
@@ -956,8 +956,13 @@ footer {
     padding: 12px 14px;
   }
 
-  .quick-info strong {
+  .quick-info span {
     font-size: .76rem;
+    margin-bottom: 8px;
+  }
+
+  .quick-info strong {
+    font-size: .78rem;
   }
 
   .about-grid,
@@ -1015,7 +1020,8 @@ footer {
   .education-card,
   .skill-card,
   .cert-card {
-    padding: 18px 16px;
+    padding: 20px 16px;
+    border-radius: 20px;
   }
 
   .timeline {
@@ -1060,10 +1066,17 @@ footer {
     padding: 14px 12px;
     display: grid;
     gap: 6px;
+    border-radius: 12px;
   }
 
   .education-meta span {
     margin-bottom: 0;
+    font-size: .76rem;
+  }
+
+  .education-meta strong {
+    font-size: .97rem;
+    line-height: 1.45;
   }
 
   .contact-section {

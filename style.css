@@ -953,7 +953,11 @@ footer {
   }
 
   .quick-info > div {
-    padding: 12px 14px;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(14, 82, 152, 0.08);
+    padding: 0 0 12px;
+    box-shadow: none !important;
   }
 
   .quick-info span {
@@ -1001,16 +1005,16 @@ footer {
   .education-card,
   .timeline-card,
   .contact-section {
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    backdrop-filter: none;
-    border-radius: 0;
-    padding: 0;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
   }
 
   .contact-section {
-    border-radius: 20px;
+    border-radius: 0;
   }
 
   .section-heading {
@@ -1023,6 +1027,9 @@ footer {
     width: 42px;
     height: 42px;
     font-size: .88rem;
+    background: transparent !important;
+    border: 1px solid rgba(14, 82, 152, 0.12);
+    color: var(--primary);
   }
 
   .section-heading h2 {
@@ -1087,10 +1094,14 @@ footer {
   }
 
   .education-meta > div {
-    padding: 14px 12px;
+    padding: 0 0 12px;
     display: grid;
     gap: 6px;
-    border-radius: 12px;
+    border-radius: 0;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(14, 82, 152, 0.08);
+    box-shadow: none !important;
   }
 
   .education-meta span {
@@ -1127,5 +1138,37 @@ footer {
     bottom: -14px;
     padding: 8px 12px;
     font-size: .7rem;
+  }
+
+  .quick-info > div,
+  .glass-card,
+  .stat-card,
+  .skill-card,
+  .cert-card,
+  .education-card,
+  .timeline-card,
+  .section-heading > span,
+  .education-meta > div,
+  .contact-section {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+  }
+
+  .quick-info > div,
+  .education-meta > div,
+  .timeline-card,
+  .skill-card,
+  .cert-card {
+    border-bottom: 1px solid rgba(14, 82, 152, 0.08) !important;
+    padding-bottom: 18px !important;
+  }
+
+  .education-meta > div {
+    display: grid;
+    gap: 6px;
   }
 }

@@ -15,7 +15,7 @@
   <div class="bg-orb orb-2"></div>
 
   <header class="topbar">
-    <a href="#home" class="brand">CV MINTARSIH<span></span></a>
+    <a href="#home" class="brand" aria-label="Halaman utama"><span></span></a>
     <nav class="nav" id="navMenu">
       <a href="#about">Tentang</a>
       <a href="#experience">Pengalaman</a>
@@ -35,16 +35,25 @@
   <main>
     <section class="hero section" id="home">
       <div class="hero-content reveal">
-        <span class="eyebrow">PORTFOLIO & CURRICULUM VITAE</span>
-        <h1><span>Mintarsih,S.Kom,Mtcre</span>.</h1>
-        <h2>Tech Entrepreneur · Teacher · IT Consultant · </h2>
+        <h1>
+        <span>Mintarsih</span>.<br>
+          IT Support • Teacher • Tech Entrepreneur
+        </h1>
+
+        <div class="status-row" aria-label="Informasi utama">
+          <span>Accepting Freelance Projects</span>
+          <span>Based in Indonesia 🇮🇩</span>
+          <span>Ready for Collaboration</span>
+        </div>
+
         <p>
-          Profesional di bidang IT  dan pendidikan Teknologi Informasi,
+          Profesional di bidang IT dan pendidikan Teknologi Informasi,
           berpengalaman dalam administrasi server, troubleshooting jaringan,
           pemeliharaan perangkat, serta penyampaian materi teknis secara aplikatif.
         </p>
         <div class="hero-actions">
           <a href="#experience" class="btn primary">Lihat Pengalaman</a>
+          <a href="CV_Mintarsih.txt" class="btn ghost" download>Download CV</a>
           <a href="mailto:mintarsihkhoernsazz@gmail.com" class="btn ghost">Hubungi Saya</a>
         </div>
 
@@ -69,6 +78,7 @@
         </div>
       </div>
 
+      <div class="hero-photo-wrap reveal" aria-hidden="true"></div>
     </section>
 
     <section class="section" id="about">
@@ -76,7 +86,7 @@
         <span>01</span>
         <div>
           <p class="section-kicker">Tentang Saya</p>
-          <h2>Tech Enthusiast, Teacher, and Entrepreneur.</h2>
+          <h2>Tech Enthusiast, Teacher, and Entrepreneur</h2>
         </div>
       </div>
 
@@ -105,7 +115,7 @@
               <path d="M12 2.75 2.5 7.5 12 12.25 21.5 7.5Zm-8.5 6.5v5.75l7 4.25 7-4.25V9.25L12 13.5Zm8.5 9.5 1.5-.9v-2.3l-1.5.9-1.5-.9v2.3Z"/>
             </svg>
           </div>
-          <strong>Education</strong>
+          <strong>Edu</strong>
           <span>Teaching & Training</span>
         </article>
         <article class="stat-card reveal">
@@ -248,7 +258,7 @@
         <article class="skill-card reveal">
           <div class="icon">🖥️</div>
           <h3>Operating System</h3>
-          <p>Windows Server, Linux dasar, Ubuntu Server, dan Android.</p>
+          <p>Windows Server, Linux dasar, Ubuntu Server.</p>
         </article>
         <article class="skill-card reveal">
           <div class="icon">🛠️</div>
@@ -315,7 +325,7 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Mintarsih. CV Online.</p>
+    <p>© <span id="year"></span> Mintarsih.</p>
     <button id="backToTop" aria-label="Kembali ke atas">↑</button>
   </footer>
 
